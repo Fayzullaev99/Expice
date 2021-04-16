@@ -1,0 +1,242 @@
+.footer{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    overflow: hidden;
+    &__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        width: 530px;
+        font-family: $poppins;
+        font-size: 36px;
+        line-height: 48px;
+        color: var(--blue);
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        @include media($lg){
+            width: 400px;
+        }
+        @include media($md){
+            width: 300px;
+            font-size: 25px;
+            line-height: 35px;
+            margin-bottom: 20px;
+        }
+        @include media($sm){
+            width: 200px;
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 15px;
+        }
+    }
+    &__text{
+        width: 530px;
+        font-family: $poppins;
+        font-size: 14px;
+        line-height: 24px;
+        color: $black;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 60px;
+        @include media($lg){
+            width: 400px;
+        }
+        @include media($md){
+            width: 300px;
+            margin-bottom: 45px;
+        }
+        @include media($sm){
+            width: 200px;
+            font-size: 10px;
+            line-height: 15px;
+            margin-bottom: 30px;
+        }
+    }
+    &__botton{
+        width: 545px;
+        height: 90px;
+        background: white;
+        box-shadow: 2px 2px 30px 2px #FFF5EC;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        @include media($lg){
+            width: 400px;
+            height: 60px;
+        }
+        @include media($md){
+            width: 300px;
+            height: 45px;
+            margin-bottom: 45px;
+        }
+        @include media($sm){
+            width: 200px;
+            height: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    &__email{
+        margin-left: 60px;
+        border: none;
+        color: var(--blue);
+        opacity: 0.6;
+        font-size: 24px;
+        @include media($lg){
+            margin-left: 30px;
+            font-size: 18px;
+        }
+        @include media($md){
+            margin-left: 20px;
+            font-size: 14px;
+        }
+        @include media($sm){
+            margin-left: 10px;
+            font-size: 10px;
+        }
+    }
+    &__button{
+        border: none;
+        margin-right: 17px;
+        cursor: pointer;
+        @include media($lg){
+           margin-right: 10px;
+        }
+        @include media($md){
+            margin-right: 8px;
+        }
+        @include media($sm){
+            margin-right: 5px;
+        }
+    }
+    &__icon{
+        background: white;
+        color: var(--red);
+        font-size: 56px;
+        border: none;
+        &::after{
+            content: "\f0a9";
+        }
+        @include media($lg){
+            font-size: 36px;
+        }
+        @include media($md){
+            font-size: 26px;
+        }
+        @include media($sm){
+            font-size: 16px;
+        }
+    }
+    &__nav{
+        width: 435px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        @include media($lg){
+            width: 350px;
+        }
+        @include media($md){
+            width: 300px;
+        }
+        @include media($sm){
+            width: 250px;
+        }
+    }
+    &__link{
+        color: $black;
+        font-size: 14px;
+        text-decoration: none;
+        
+    }
+    &__left{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-top: auto;
+    }
+    &__left__icons{
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left__fb{
+        font-size: 20px;
+        &::after{
+            content: "\f39e";
+        }
+        &:hover{
+            color: rgb(43, 43, 171);
+        }
+    }
+    &__left__tw{
+        font-size: 20px;
+        &::after{
+            content: "\f099";
+        }
+        &:hover{
+            color: rgb(255, 119, 0);
+        }
+    }
+    &__left__in{
+        font-size: 20px;
+        &::after{
+            content: "\f7b0";
+        }
+        &:hover{
+           color: white;
+           background: $black;
+        }
+    }
+    &__left__be{
+        font-size: 20px;
+        &::after{
+            content: "\f1b4";
+        }
+        &:hover{
+           color: rgb(164, 0, 90);
+        }
+    }
+    &__left__text{
+        margin-left: 50px;
+        margin-right: 50px;
+        font-family: $poppins;
+        font-size: 14px;
+        color: $black;
+        @include media($md){
+            margin-right: 35px;
+            margin-left: 35px;
+        }
+        @include media($sm){
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+    &__img{
+        height: 100vh;
+        width: 100vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        @include media($lg){
+            width: 50vh;
+        }
+    }
+}

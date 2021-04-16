@@ -1,0 +1,442 @@
+.service-section{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    @include media($xxl){
+        padding-bottom: 10px;
+        padding-top: 10px;
+        overflow: hidden;
+    }
+    @include media($md){
+        padding-top: 10px;
+    }
+}
+.service{
+    &__top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        align-items: center;
+        margin-bottom: 70px;
+        @include media($xxl){
+            justify-content: center; 
+        }
+    }
+    &__column{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    &__title__block{
+        width: 25px;
+        height: 140px;
+        background: var(--red);
+        margin-right: 30px;
+        @include media($md){
+            width: 20px;
+            height: 80px;
+        }
+    }
+    &__title{
+        width: 630px;
+        color: var(--blue);
+        font-family: $poppins;
+        font-size: 45px;
+        font-weight: 500;
+        line-height: 60px;
+        @include media($xl){
+            width: 100%;
+        }
+        @include media($sm){
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    &__text__block{
+        width: 600px;
+        @include media($lg){
+            width: 100%;
+        }
+    }
+    &__text{
+        font-family: $poppins;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #707070;
+
+    }
+}
+.service-content{
+    background: url(../images/slider_bg.png);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    @include media($lg){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        grid-gap: 10px;
+        @include media($xxl){
+            grid-template-columns: 1fr;
+        }
+    }
+    &__grid-content{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    &__meeting{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media($xl){
+            justify-content: center;
+        }
+        @include media($md){
+            width: 100%;
+        }
+        &__img{
+            width: 350px;
+            height: 340px;
+            fill: var(--red);
+            background: $wheat;
+            padding: 90px 95px;
+            @include media($lg){
+             width: 300px;
+             height: 280px;
+             padding: 50px 55px;
+            }
+            @include media($md){
+                width: 220px;
+                height: 200px;
+                padding: 15px 20px;
+            }
+            @include media($sm){
+                width: 100px;
+                height: 80px;
+                padding: 5px 8px;
+            }
+        }
+        &__div{
+            position: relative;
+            height: 5px;
+            // color: var(--red);
+            background: var(--red);
+            width: 130px;
+            right: 67px;
+            @include media($big){
+                width: 250px;
+                left: -70px;
+            }
+            @include media($xxl){
+                width: 250px;
+                left: -165px;
+            }
+            @include media($xl){
+                width: 200px;
+                left: -70px;
+            }
+            @include media($lg){
+                width: 100px;
+                left: -70px;
+            }
+            @include media($md){
+                width: 70px;
+                left: -30px;
+            }
+            @include media($sm){
+                width: 35px;
+                left: -30px;
+                opacity: 0;
+            }
+        }
+        &__icon{
+            position: relative;
+            left: -40px;
+            bottom: -1px;
+            @include media($big){
+                right: 480px;
+            }
+            @include media($xxl){
+                right: 480px;
+            }
+            @include media($xl){
+                right: 362px;
+            }
+            @include media($lg){
+                right: 248px;
+            }
+            @include media($md){
+                left: 0px;
+            }
+        }
+        &__flex{
+            width: 200px;
+            height: 55px;
+            @include media($lg){
+             width: 150px;
+             height: 35px;
+            }
+            @include media($md){
+                width: 120px;
+                height: 20px;
+            }
+            @include media($sm){
+                width: 100px;
+                height: 20px;
+            }
+        }
+        &__title{
+            font-family: $poppins;
+            font-weight: 500;
+            font-size: 24px;
+            color: var(--blue);
+            @include media($md){
+                font-size: 16px;
+                line-height: 15px;
+            }
+            @include media($sm){
+                font-size: 10px;
+                line-height: 10px;
+            }
+        }
+        &__text{
+            font-family: $poppins;
+            font-size: 14px;
+            line-height: 24px;
+            color: $black;
+            @include media($md){
+                font-size: 10px;
+                line-height: 13px;
+            }
+            @include media($sm){
+                font-size: 7px;
+                line-height: 10px;
+            }
+        }
+    }
+    &__eating{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media($xl){
+            justify-content: center;
+        }
+        @include media($md){
+            width: 100%;
+        }
+        &__img{
+            width: 350px;
+            height: 340px;
+            fill: var(--red);
+            background: $wheat;
+            padding: 90px 95px;
+            @include media($lg){
+                width: 300px;
+                height: 280px;
+                padding: 50px 55px;
+            }
+            @include media($md){
+                width: 220px;
+                height: 200px;
+                padding: 15px 20px;
+            }
+            @include media($sm){
+                width: 100px;
+                height: 80px;
+                padding: 5px 8px;
+            }
+        }
+        &__div{
+            position: relative;
+            height: 5px;
+            // color: var(--red);
+            background: var(--red);
+            width: 130px;
+            right: -33px;
+            @include media($big){
+                right: 4px;
+            }
+            @include media($xxl){
+                width: 300px;
+                right: 65px;
+            }
+            @include media($xl){
+                width: 200px;
+                right: 55px;
+            }
+            @include media($lg){
+                width: 100px;
+                right: -30px;
+            }
+            @include media($md){
+                width: 70px;
+                left: -30px;
+            }
+            @include media($sm){
+                width: 70px;
+                left: -30px;
+                opacity: 0;
+            }
+        }
+        &__icon{
+            position: relative;
+            right: -170px;
+            bottom: -1px;
+            @include media($xxl){
+                left: 317px;
+            }
+            @include media($xl){
+                left: 153px;
+            }
+            @include media($lg){
+                left: 135px;
+            }
+            @include media($md){
+                left: 47px;
+            }
+        }
+        &__flex{
+            width: 200px;
+            height: 55px;
+            @include media($lg){
+                width: 150px;
+                height: 35px;
+               }
+            @include media($md){
+                width: 120px;
+                height: 20px;
+            }
+            @include media($sm){
+                width: 100px;
+                height: 20px;
+            }
+        }
+        &__title{
+            font-family: $poppins;
+            font-weight: 500;
+            font-size: 24px;
+            color: var(--blue);
+            @include media($md){
+                font-size: 16px;
+                line-height: 15px;
+            }
+            @include media($sm){
+                font-size: 10px;
+                line-height: 10px;
+            }
+        }
+        &__text{
+            font-family: $poppins;
+            font-size: 14px;
+            line-height: 24px;
+            color: $black;
+            @include media($md){
+                font-size: 10px;
+                line-height: 13px;
+            }
+            @include media($sm){
+                font-size: 7px;
+                line-height: 10px;
+            }
+        }
+    }
+    &__delivery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__bg{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: $wheat;
+            padding: 100px 110px 150px 110px;
+            @include media($sm){
+                padding: 25px 25px 25px 25px;
+                width: 100%;
+            }
+        }
+        &__img{
+            margin-bottom: 90px;
+            fill: var(--red);
+            width: 320px;
+            height: 240px;
+            @include media($md){
+                margin-bottom: 45px;
+                width: 160px;
+                height: 120px;
+            }
+        }
+        &__title{
+            font-family: $poppins;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            color: var(--blue);
+            width: 240px;
+            margin-bottom: 20px;
+            @include media($md){
+                margin-bottom: 10px;
+                width: 120px;
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+        &__text{
+            font-family: $poppins;
+            font-size: 14px;
+            line-height: 24px;
+            width: 200px;
+            text-align: center;
+            color: $black;
+            margin-bottom: 20px;
+            @include media($md){
+                margin-bottom: 10px;
+                width: 100px;
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+        &__line{
+            width: 192px;
+            height: 3px;
+            background: var(--red);
+            @include media($md){
+                width: 95px;
+                height: 2px;
+            }
+        }
+    }
+}
+.meeting__icon{
+    color: var(--red);
+    &::before{
+        content: "\f177";
+        font-size: 40px;
+    }
+    &::after{
+        content: "\10f177";
+        font-size: 40px;
+    }
+}
+.eating__icon{
+    color: var(--red);
+    &::before{
+        content: "\f178";
+        font-size: 39px;
+    }
+    &::after{
+        content: "\10f178";
+        font-size: 40px;
+    }
+}

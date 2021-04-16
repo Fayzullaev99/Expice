@@ -1,0 +1,49 @@
+header.header
+ .nav-right 
+ .container
+   nav.nav 
+    p.nav__logo expice 
+    button.nav__btn
+     span.nav__btn-line
+     span.nav__btn-line
+     span.nav__btn-line
+    ul.nav__list
+     button.fal.nav__close
+     each link in['Menu One','Menu two','Menu three','Menu four']
+      li
+       a(href="#!").nav__link= link
+     .nav-user.open
+      i.far.nav-user__icon
+      form(name="form").form
+       .nav-user__dropdown
+        button.nav-user__dropbtn User
+        i.fas.nav-user__dropbtn__icon
+         .nav-user__dropdown-content
+          a(href="#").nav-user__dropdown__link#userGreen UserGreen
+          a(href="#").nav-user__dropdown__link#userRed UserRed
+          a(href="#").nav-user__dropdown__link#userBlue UserBlue
+   .header-content
+     h1.header-content__title Food
+     p.header-content__text Discover Restaurant & Delicious Food
+     form(action="")
+      .header-content__search 
+       input(type="text" placeholder="Search Restaurant, Food").header-content__input
+       button.header-content__button go
+   .slider  
+    .slider__back
+     img(src="images/header-slider_bg.png", alt="delicous food").slider-back__img
+    .slider__inner 
+     .slider__item
+      img(src="images/header-slider_1.png", alt="delicous food").slider__img 
+     .slider__item.active
+      img(src="images/header-slider_2.png", alt="delicous food").slider__img 
+     .slider__item
+      img(src="images/header-slider_3.png", alt="delicous food").slider__img 
+     .slider__buttons 
+      button(data-target="prev").slider__btn-prev
+       i.fal.slider__btn-previ#prev
+      button(data-target="next").slider__btn-next
+       i.fal.slider__btn-nexti#next
+ .fixed
+  i.fal.fixed__icon
+  a.fixed__text Rajshahi

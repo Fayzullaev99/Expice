@@ -1,0 +1,327 @@
+.advance{
+    width: 100%;
+    height: 1090px;
+    background: $wheat;
+    position: relative;
+    overflow: hidden;
+    @include media($xxl){
+        height: 950px;
+    }
+    @include media($xl){
+        height: 850px;
+    }
+    @include media($lg){
+        height: 750px;
+    }
+    @include media($md){
+        height: 650px;
+    }
+    @include media($sm){
+        height: 350px;
+    }
+    &__bg{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 1000px;
+        @include media($xl){
+            height: 810px;
+        }
+        @include media($lg){
+            height: 710px;
+        }
+        @include media($md){
+            height: 610px;
+        }
+        @include media($sm){
+            align-items: flex-end;
+            height: 300px;
+        }
+    }
+    &__block{
+        width: 1230px;
+        height: 560px;
+        background: white;
+        margin: auto;
+        
+        @include media($big){
+            width: 1155px;
+        }
+        @include media($xxl){
+            width: 1000px;
+        }
+        @include media($xl){
+            width: 810px;
+        }
+        @include media($lg){
+            width: 570px;
+        }
+        @include media($md){
+            width: 520px;
+            height: 350px;
+        }
+        @include media($sm){
+            width: 300px;
+            height: 200px;
+        }
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 120px;
+        @include media($xl){
+            padding-top: 80px;
+            padding-bottom: 100px;
+        }
+        @include media($lg){
+            padding-bottom: 70px;
+            padding-top: 50px;
+        }
+        @include media($sm){
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+    }
+    &__row{
+        width: 230px;
+        height: 15px;
+        background: var(--red);
+        color: var(--red);
+        margin-bottom: 30px;
+        @include media($md){
+            width: 130px;
+            height: 10px;
+            margin-bottom: 20px;
+        }
+        @include media($sm){
+            width: 70px;
+            height: 5px;
+            margin-bottom: 10px;
+        }
+    }
+    &__title{
+        font-family: $poppins;
+        font-weight: 500;
+        font-size: 36px;
+        color: var(--blue);
+        margin-bottom: 60px;
+        @include media($md){
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        @include media($sm){
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    &__search{
+        width: 545px;
+        height: 90px;
+        padding: 14px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 30px 2px #FFF5EC;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+        @include media($xxl){
+            width: 345px;
+            height: 90px;
+            padding: 14px;
+        }
+        @include media($md){
+            width: 250px;
+            height: 50px;
+            margin-bottom: 30px;
+        }
+        @include media($sm){
+            width: 150px;
+            height: 30px;
+            margin-bottom: 15px;
+            justify-content: center;
+        }
+    }
+    &__input{
+        // width: 140px;
+        height: 40px;
+        flex-grow: 1;
+        border: none;
+        font-size: 20px;
+        color: var(--blue);
+        @include media($md){
+            height: 20px;
+            font-size: 16px;
+        }
+        @include media($sm){
+            height: 10px;
+            font-size: 8px;
+        }
+    }
+    &__button{
+        width: 128px;
+        height: 60px;
+        background: var(--red);
+        border: none;
+        font-family: $poppins;
+        color: $black;
+        font-weight: 600;
+        font-size: 30px;
+        margin-left: 14px;
+        cursor: pointer;
+        @include media($md){
+            width: 60px;
+            height: 30px;
+            font-size: 16px;
+            margin-left: 7px;
+        }
+        @include media($sm){
+            width: 30px;
+            height: 20px;
+            font-size: 8px;
+            margin-left: 4px;
+        }
+    }
+    &__right-vector-1{
+        display: block;
+        margin-left: auto;
+        position: relative;
+        top: 300px;
+        @include media($md){
+            width: 150px;
+            top: 144px;
+            right: -40px;
+        }
+        @include media($sm){
+            width: 150px;
+            top: 144px;
+            right: -5px;
+        }
+    }
+    &__right-vector-2{
+        display: block;
+        margin-left: auto;
+        position: relative;
+        bottom: -300px;
+        @include media($md){
+            height: 150px;
+            right: -40px;
+            bottom: -145px;
+        }
+        @include media($sm){
+            height: 150px;
+            right: -5px;
+            bottom: -155px;
+        }
+    }
+    &__left-vector-1{
+        position: relative;
+        top: -250px;
+        @include media($md){
+            left: -30px;
+            height: 150px;
+            top: -150px;
+        }
+        @include media($sm){
+            left: -5px;
+            height: 150px;
+            top: -150px;
+        }
+    }
+    &__left-vector-2{
+        position: relative;
+        bottom: 250px;
+        @include media($md){
+            left: -55px;
+            width: 150px;
+            bottom: 120px;
+        }
+        @include media($sm){
+            left: -30px;
+        }
+    }
+    &__img-left{
+        position: absolute;
+        bottom: -183px;
+        height: 1500px;
+        @include media($xxl){
+            height: 102%;
+            top: 10%;
+            width: 500px;
+        }
+        @include media($xl){
+            width: 400px;
+        }
+        @include media($lg){
+            width: 300px;
+        }
+        @include media($md){
+            width: 200px;
+        }
+        @include media($sm){
+            width: 100px;
+        }
+    }
+    &__img-right{
+        position: absolute;
+        top: 25%;
+        right: 0;
+        @include media($xxl){
+            // height: 100%;
+            width: 300px;
+        }
+        @include media($lg){
+            width: 250px;
+        }
+        @include media($md){
+            width: 180px;
+        }
+        @include media($sm){
+            width: 95px;
+            top: 10%;
+        }
+    }
+        
+}
+.advance-info{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media($xxl){
+        width: 300px;
+    }
+    @include media($lg){
+        width: 250px;
+    }
+    @include media($sm){
+        width: 150px;
+    }
+    
+    &__block-content{
+        display: flex;
+    }
+    &__title{
+        font-family: $poppins;
+        color: var(--blue); 
+        @include media($sm){
+            font-size: 12px;
+        } 
+    }
+    &__icon{
+        color: var(--red);
+        &::after{
+            content: "\f0dd";
+        }
+    }
+    &__user{
+        color: var(--blue);
+        @include media($sm){
+            font-size: 10px;
+        } 
+    }
+}
